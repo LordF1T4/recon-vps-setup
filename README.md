@@ -7,9 +7,10 @@ Bug Bounty Recon VPS - tools install
 sudo su
 ```
 > Adicionar ao /etc/apt/sources.list
-- deb http://http.kali.org/kali kali-rolling main non-free contrib
-- deb-src http://http.kali.org/kali kali-rolling main non-free contrib
-
+```
+printf "#Repositórios do Kali\ndeb http://http.kali.org/kali kali-rolling main non-free contrib\ndeb-src http://http.kali.org/kali kali-rolling main non-free contrib\n" >> /etc/apt/sources.list
+```
+> Adicionar a chave e atualizar
 ```
 apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ED444FF07D8D0BF6 
 apt-get update && apt-get update && apt-get install net-tools
