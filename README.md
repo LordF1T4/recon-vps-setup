@@ -6,8 +6,8 @@ Instalação das tools para Recon VPN
  
 # Instalação do Go
 
-selecione a versão  que você deseja instalar, no nosso exemplo estamos utilizando a versão 1.13
-> VERSAO_GO=1.13
+selecione a versão  que você deseja instalar
+> VERSAO_GO=1.1
 > cd ~
 > curl -O "https://dl.google.com/go/go${VERSAO_GO}.linux-amd64.tar.gz"
 > tar xvf "go${VERSAO_GO}.linux-amd64.tar.gz"
