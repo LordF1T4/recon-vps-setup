@@ -1,5 +1,5 @@
-# recon-vpn-setup
-Bug Bounty Recon VPN - tools install 
+# recon-vps-setup
+Bug Bounty Recon VPS - tools install 
 
 ## Repositórios kali no ubuntu / Update
 
