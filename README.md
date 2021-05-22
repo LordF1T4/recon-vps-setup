@@ -1,9 +1,11 @@
 # recon-vpn-setup
-Instalação das tools para Recon VPN 
+Bug Bounty Recon VPN - tools install 
 
 ## Att
 
-> apt-get update && apt-get update
+```
+apt-get update && apt-get update
+```
 
 ## Criação de Diretórios
 
