@@ -1,10 +1,18 @@
 # recon-vpn-setup
 Bug Bounty Recon VPN - tools install 
 
-## Att
+## Repositórios kali no ubuntu / Update
 
 ```
-apt-get update && apt-get update
+sudo su
+```
+> Adicionar ao /etc/apt/sources.list
+- deb http://http.kali.org/kali kali-rolling main non-free contrib
+- deb-src http://http.kali.org/kali kali-rolling main non-free contrib
+
+```
+apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ED444FF07D8D0BF6 
+apt-get update && apt-get update && apt-get install net-tools
 ```
 
 ## Criação de Diretórios
@@ -47,8 +55,11 @@ source ~/.profile
 go version
 ```
 
-## Instalando Coisas Básicas
+## Instalando Ferramentas
 
 ```
-apt-get install nmap dirb 
+apt-get install nmap dirb dnsenum wafw00f whois sqlmap wpscan -y
+```
+```
+
 ```
