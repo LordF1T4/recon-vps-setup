@@ -45,7 +45,7 @@ echo 'export PATH=$PATH:/usr/local/go/bin' >>~/.profile && source ~/.profile && 
 ## Instalando Ferramentas
 
 ```
-apt-get install nmap dirb dnsenum wafw00f whois sqlmap wpscan -y
+apt-get install nmap dirb dnsenum wafw00f whois sqlmap wpscan sublist3r -y
 ```
 ```
 
