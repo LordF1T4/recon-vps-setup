@@ -30,11 +30,10 @@ apt-get install python3 python3-pip -y
  
 ## Instalação do Go
 
-> Selecione a versão  que você deseja instalar
+> Conferir última versão do Go em https://golang.org/doc/install
 
-```  
-VERSAO_GO=1.1
-cd ~
+```
+cd ~ && wget https://golang.org/dl/go1.16.4.linux-amd64.tar.gz
 curl -O "https://dl.google.com/go/go${VERSAO_GO}.linux-amd64.tar.gz"
 ```
 ```
