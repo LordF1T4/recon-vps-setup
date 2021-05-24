@@ -33,26 +33,13 @@ apt-get install python3 python3-pip -y
 > Conferir última versão do Go em https://golang.org/doc/install
 
 ```
-cd ~ && wget https://golang.org/dl/go1.16.4.linux-amd64.tar.gz
-curl -O "https://dl.google.com/go/go${VERSAO_GO}.linux-amd64.tar.gz"
+cd ~ && wget https://golang.org/dl/go1.16.4.linux-amd64.tar.gz && tar xvf go1.16.4.linux-amd64.tar.gz && rm -r go1.16.4.linux-amd64.tar.gz
 ```
 ```
-tar xvf "go${VERSAO_GO}.linux-amd64.tar.gz"
+chown -R root:root ./go && mv go /usr/local
 ```
 ```
-chown -R root:root /usr/local/go
-sudo mv go /usr/local
-```
-> sudo nano ~/.profile
-```    
-export GOROOT=$HOME/go
-export GOPATH=$HOME/work
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
-```
-> salva e sai
-```
-source ~/.profile
-go version
+echo 'export PATH=$PATH:/usr/local/go/bin' >>~/.profile && source ~/.profile && go version
 ```
 
 ## Instalando Ferramentas
