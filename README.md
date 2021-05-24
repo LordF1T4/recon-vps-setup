@@ -42,11 +42,26 @@ chown -R root:root ./go && mv go /usr/local
 echo 'export PATH=$PATH:/usr/local/go/bin' >>~/.profile && source ~/.profile && go version
 ```
 
-## Instalando Ferramentas
+## Instalando Ferramentas pelo apt-get
 
 ```
 apt-get install nmap dirb dnsenum wafw00f whois sqlmap wpscan sublist3r -y
 ```
+## SecretFinder - Busca dados sensíveis nos .js
 ```
+git clone https://github.com/m4ll0k/SecretFinder.git && cd SecretFinder && pip3 install -r requirements.txt
+```
+## LinkFinder - Busca Endpoints nos .js
+```
+git clone https://github.com/GerbenJavado/LinkFinder.git && cd LinkFinder && python3 setup.py install
+```
+## GitSecrets - Faz busca no GitHub
+```
+git clone https://github.com/djhohnstein/GitSecrets.git && cd GitSecrets && pip3 install -r requirements.txt
+```
+### SubFinder - Enumera Subdomínios
+```
+go get -v github.com/projectdiscovery/subfinder/cmd/subfinder
 
 ```
+##
