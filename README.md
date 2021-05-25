@@ -41,6 +41,7 @@ chown -R root:root ./go && mv go /usr/local
 ```
 echo 'export GOROOT=/usr/local/go' >>~/.profile && echo 'export GOPATH=/root/go' >>~/.profile && echo 'export PATH=$PATH:/usr/local/go/bin:/root/go/bin' && source ~/.profile && go version
 ```
+> Precisa dar um $ source ~/.profile toda vez que abre o terminal :(
 
 ## Instalando Ferramentas pelo apt-get
 
