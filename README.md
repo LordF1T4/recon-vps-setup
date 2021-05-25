@@ -16,7 +16,7 @@ apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ED444FF07D8D0BF6
 apt-get update && apt-get update && apt-get install net-tools -y
 ```
 
-## Criação de Diretórios
+### Criação de Diretórios
 
 ```
 mkdir downloads && mkdir tools && mkdir tests && mkdir hackerOne && mkdir bugCrowd
@@ -43,23 +43,23 @@ echo 'export GOROOT=/usr/local/go' >>~/.profile && echo 'export GOPATH=/root/go'
 ```
 > Precisa dar um $ source ~/.profile toda vez que abre o terminal :(
 
-## Instalando Ferramentas pelo apt-get
+### Instalando Ferramentas pelo apt-get
 ```
 apt-get install nmap dirb dnsenum wafw00f whois sqlmap wpscan sublist3r -y
 ```
-## SecretFinder - Busca dados sensíveis nos .js
+### SecretFinder - Busca dados sensíveis nos .js
 ```
 git clone https://github.com/m4ll0k/SecretFinder.git && cd SecretFinder && pip3 install -r requirements.txt
 ```
-## LinkFinder - Busca Endpoints nos .js
+### LinkFinder - Busca Endpoints nos .js
 ```
 git clone https://github.com/GerbenJavado/LinkFinder.git && cd LinkFinder && python3 setup.py install
 ```
-## GitSecrets - Faz busca no GitHub
+### GitSecrets - Faz busca no GitHub
 ```
 git clone https://github.com/djhohnstein/GitSecrets.git && cd GitSecrets && pip3 install -r requirements.txt
 ```
-### Todas as ferramentas em go de uma vez para instalar:
+## Todas as ferramentas em go de uma vez para instalar:
 ```
 go get -v github.com/projectdiscovery/subfinder/cmd/subfinder && go get -u github.com/tomnomnom/assetfinder && go get -v github.com/OWASP/Amass/v3/... && go get github.com/tomnomnom/waybackurls && go get github.com/003random/getJS && go get -u github.com/hiddengearz/jsubfinder && go get -v github.com/projectdiscovery/httpx/cmd/httpx && go get -u github.com/tomnomnom/fff && go get -u github.com/tomnomnom/anew && go get -v github.com/hahwul/dalfox/v2 && go get -u github.com/jaeles-project/gospider
 ```
@@ -67,47 +67,47 @@ go get -v github.com/projectdiscovery/subfinder/cmd/subfinder && go get -u githu
 ```
 go get -v github.com/projectdiscovery/subfinder/cmd/subfinder
 ```
-## AssetFinder - Enumera Dominios e Subdomínios
+### AssetFinder - Enumera Dominios e Subdomínios
 ```
 go get -u github.com/tomnomnom/assetfinder
 ```
-## Amass - Mapping / Asset Finder
+### Amass - Mapping / Asset Finder
 ```
 go get -v github.com/OWASP/Amass/v3/...
 ```
-## WayBackURLs - Consulta Wayback Machine
+### WayBackURLs - Consulta Wayback Machine
 ```
 go get github.com/tomnomnom/waybackurls
 ```
-## GetJS - Enumera todos .js do alvo
+### GetJS - Enumera todos .js do alvo
 ```
 go get github.com/003random/getJS
 ```
-## JSubFinder - Garimpa subdom e secrets em .js
+### JSubFinder - Garimpa subdom e secrets em .js
 ```
 go get -u github.com/hiddengearz/jsubfinder
 ```
-## HTTPX - Checa ativos
+### HTTPX - Checa ativos
 ```
 go get -v github.com/projectdiscovery/httpx/cmd/httpx
 ```
-## fff - Checa .js ativos
+### fff - Checa .js ativos
 ```
 go get -u github.com/tomnomnom/fff
 ```
-## anew - Retira duplicados / Junta listas
+### anew - Retira duplicados / Junta listas
 ```
 go get -u github.com/tomnomnom/anew
 ```
-## DalFox - Xss Finder
+### DalFox - Xss Finder
 ```
 go get -v github.com/hahwul/dalfox/v2
 ```
-## GoSpider - Webspider
+### GoSpider - Webspider
 ```
 go get -u github.com/jaeles-project/gospider
 ```
-## FDsploit - Directory Traversal Tester
+### FDsploit - Directory Traversal Tester
 ```
 git clone https://github.com/chrispetrou/FDsploit.git && cd FDsploit && pip3 install -r requirements.txt
 ```
