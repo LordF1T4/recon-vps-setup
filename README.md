@@ -39,7 +39,7 @@ cd ~ && wget https://golang.org/dl/go1.16.4.linux-amd64.tar.gz && tar xvf go1.16
 chown -R root:root ./go && mv go /usr/local
 ```
 ```
-echo 'export PATH=$PATH:/usr/local/go/bin' >>~/.profile && source ~/.profile && go version
+echo 'export GOROOT=/usr/local/go' >>~/.profile && echo 'export GOPATH=/root/go' >>~/.profile && echo 'export PATH=$PATH:/usr/local/go/bin:/root/go/bin' && source ~/.profile && go version
 ```
 
 ## Instalando Ferramentas pelo apt-get
