@@ -59,9 +59,9 @@ git clone https://github.com/GerbenJavado/LinkFinder.git && cd LinkFinder && pyt
 ```
 git clone https://github.com/djhohnstein/GitSecrets.git && cd GitSecrets && pip3 install -r requirements.txt
 ```
-## Todas as ferramentas em go de uma vez para instalar:
+## Todas ferramentas abaixo (1liner):
 ```
-go get -v github.com/projectdiscovery/subfinder/cmd/subfinder && go get -u github.com/tomnomnom/assetfinder && go get -v github.com/OWASP/Amass/v3/... && go get github.com/tomnomnom/waybackurls && go get github.com/003random/getJS && go get -u github.com/hiddengearz/jsubfinder && go get -v github.com/projectdiscovery/httpx/cmd/httpx && go get -u github.com/tomnomnom/fff && go get -u github.com/tomnomnom/anew && go get -v github.com/hahwul/dalfox/v2 && go get -u github.com/jaeles-project/gospider
+go get -v github.com/projectdiscovery/subfinder/cmd/subfinder && go get -u github.com/tomnomnom/assetfinder && go get -v github.com/OWASP/Amass/v3/... && go get github.com/tomnomnom/waybackurls && go get github.com/003random/getJS && go get -u github.com/hiddengearz/jsubfinder && go get -v github.com/projectdiscovery/httpx/cmd/httpx && go get -u github.com/tomnomnom/fff && go get -u github.com/tomnomnom/anew && go get -v github.com/hahwul/dalfox/v2 && go get -u github.com/jaeles-project/gospider && go get -u github.com/tomnomnom/hacks/html-tool
 ```
 ### SubFinder - Enumera Subdomínios
 ```
@@ -111,4 +111,7 @@ go get -u github.com/jaeles-project/gospider
 ```
 git clone https://github.com/chrispetrou/FDsploit.git && cd FDsploit && pip3 install -r requirements.txt
 ```
-
+### Html-Tools - tomnomnom - busca comentários no código
+```
+go get -u github.com/tomnomnom/hacks/html-tool
+```
