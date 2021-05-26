@@ -119,3 +119,8 @@ git clone https://github.com/chrispetrou/FDsploit.git && cd FDsploit && pip3 ins
 ```
 go get -u github.com/tomnomnom/hacks/html-tool
 ```
+
+## Para manter conexão abertao e não dar timeout no ssh:
+```
+echo 'ClientAliveInterval 60' >> /etc/ssh/sshd_config && service ssh restart
+```
