@@ -2,7 +2,7 @@
 Bug Bounty Recon VPS - tools install 
 
 ## Repositórios kali no ubuntu / Update
-
+> Rodar tudo como root!
 ```
 sudo su
 ```
@@ -15,21 +15,19 @@ printf "#Repositórios do Kali\ndeb http://http.kali.org/kali kali-rolling main 
 apt-key adv --recv-keys --keyserver keyserver.ubuntu.com ED444FF07D8D0BF6 
 apt-get update && apt-get update && apt-get install net-tools -y
 ```
-
+## Mantendo sessão ssh da ec2 ativa
+```
+echo 'ClientAliveInterval 60' >> /etc/ssh/sshd_config && service ssh restart
+```
 ### Criação de Diretórios
-
 ```
 mkdir downloads && mkdir tools && mkdir tests && mkdir hackerOne && mkdir bugCrowd
 ```
-
 ## Instalação do Python
-
 ```
 apt-get install python3 python3-pip -y
 ```
- 
 ## Instalação do Go
-
 > Conferir última versão do Go em https://golang.org/doc/install
 
 ```
@@ -38,10 +36,11 @@ cd ~ && wget https://golang.org/dl/go1.16.4.linux-amd64.tar.gz && tar xvf go1.16
 ```
 chown -R root:root ./go && mv go /usr/local
 ```
+> Setando o Path:
 ```
-echo 'export GOROOT=/usr/local/go' >>~/.profile && echo 'export GOPATH=/root/go' >>~/.profile && echo 'export PATH=$PATH:/usr/local/go/bin:/root/go/bin' && source ~/.profile && go version
+echo '# Setando GoPath' >>~/.bashrc && echo 'export GOROOT=/usr/local/go' >>~/.bashrc && echo 'export GOPATH=/root/go' >>~/.bashrc &&
+echo 'export PATH=$PATH:/usr/local/go/bin:/root/go/bin' >>~/.bashrc && echo '' >>~/.bashrc && echo '# Meus Aliases' >>~/.bashrc && echo "alias lista='wc -l *'" >>~/.bashrc && source ~/.bashrc && go version
 ```
-> Precisa dar um $ source ~/.profile toda vez que abre o terminal :(
 
 ### Instalando Ferramentas pelo apt-get
 ```
@@ -118,9 +117,4 @@ git clone https://github.com/chrispetrou/FDsploit.git && cd FDsploit && pip3 ins
 ### Html-Tools - tomnomnom - busca comentários no código
 ```
 go get -u github.com/tomnomnom/hacks/html-tool
-```
-
-## Para manter conexão abertao e não dar timeout no ssh:
-```
-echo 'ClientAliveInterval 60' >> /etc/ssh/sshd_config && service ssh restart
 ```
