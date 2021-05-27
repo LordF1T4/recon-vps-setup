@@ -54,10 +54,6 @@ git clone https://github.com/m4ll0k/SecretFinder.git && cd SecretFinder && pip3 
 ```
 git clone https://github.com/GerbenJavado/LinkFinder.git && cd LinkFinder && python3 setup.py install
 ```
-### GitSecrets - Faz busca no GitHub
-```
-git clone https://github.com/djhohnstein/GitSecrets.git && cd GitSecrets && pip3 install -r requirements.txt
-```
 ### github-search - Faz busca no GitHub
 ```
 git clone https://github.com/gwen001/github-search.git && cd github-search && pip3 install -r requirements3.txt
