@@ -60,7 +60,7 @@ git clone https://github.com/gwen001/github-search.git && cd github-search && pi
 ```
 ## Todas ferramentas abaixo (1liner):
 ```
-go get -v github.com/projectdiscovery/subfinder/cmd/subfinder && go get -u github.com/tomnomnom/assetfinder && go get -v github.com/OWASP/Amass/v3/... && go get github.com/tomnomnom/waybackurls && go get github.com/003random/getJS && go get -u github.com/hiddengearz/jsubfinder && go get -v github.com/projectdiscovery/httpx/cmd/httpx && go get -u github.com/tomnomnom/fff && go get -u github.com/tomnomnom/anew && go get -v github.com/hahwul/dalfox/v2 && go get -u github.com/jaeles-project/gospider && go get -u github.com/tomnomnom/hacks/html-tool && go get -u github.com/tomnomnom/httprobe
+go get -v github.com/projectdiscovery/subfinder/cmd/subfinder && go get -u github.com/tomnomnom/assetfinder && go get -v github.com/OWASP/Amass/v3/... && go get github.com/tomnomnom/waybackurls && go get github.com/003random/getJS && go get -u github.com/hiddengearz/jsubfinder && go get -v github.com/projectdiscovery/httpx/cmd/httpx && go get -u github.com/tomnomnom/fff && go get -u github.com/tomnomnom/anew && go get -v github.com/hahwul/dalfox/v2 && go get -u github.com/jaeles-project/gospider && go get -u github.com/tomnomnom/hacks/html-tool && go get -u github.com/tomnomnom/httprobe && go get -u github.com/tomnomnom/hacks/html-tool
 ```
 ### SubFinder - Enumera Subdomínios
 ```
@@ -93,6 +93,10 @@ go get -v github.com/projectdiscovery/httpx/cmd/httpx
 ### Httprobe - Chega ativos
 ```
 go get -u github.com/tomnomnom/httprobe
+```
+### html-tool - pega dados do html
+```
+go get -u github.com/tomnomnom/hacks/html-tool
 ```
 ### fff - Checa .js ativos
 ```
